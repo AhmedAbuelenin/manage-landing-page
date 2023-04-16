@@ -9,3 +9,8 @@ body {
   background-color: var(--color-white);
   color: var(--color-light-gray);
 }
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
