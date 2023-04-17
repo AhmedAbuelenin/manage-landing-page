@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item a:link,
+.nav__item a:visited {
+  color: var(--color-dark-blue);
+  transition: var(--transition-timing);
+}
+
+.nav__item a:hover,
+.nav__item a:active {
+  cursor: pointer;
+  color: var(--color-grayish-blue);
+}

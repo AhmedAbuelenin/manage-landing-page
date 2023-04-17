@@ -1,6 +1,6 @@
 :root {
   --color-white: #ffffff;
-  --color-pale-red: #ffefeb;
+  --color-pale-red: hsl(12, 100%, 75%);
   --color-bright-red: #f25f3a;
   --color-light-gray: #fafafa;
   --color-grayish-blue: #9095a7;
@@ -56,4 +56,43 @@ body {
 .container {
   max-width: 144rem;
   margin: 0 auto;
+}
+
+.getStarted:link,
+.getStarted:visited {
+  background-color: var(--color-bright-red);
+  border-radius: 4rem;
+  padding: 1.1rem 3rem;
+  transition: var(--transition-timing);
+  box-shadow: 0 0 0.3rem var(--color-pale-red);
+}
+
+.getStarted:hover,
+.getStarted:active {
+  cursor: pointer;
+  background-color: var(--color-pale-red);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item a:link,
+.nav__item a:visited {
+  color: var(--color-dark-blue);
+  transition: var(--transition-timing);
+}
+
+.nav__item a:hover,
+.nav__item a:active {
+  cursor: pointer;
+  color: var(--color-grayish-blue);
 }/*# sourceMappingURL=style.css.map */

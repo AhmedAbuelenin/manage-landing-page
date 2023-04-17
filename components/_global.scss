@@ -14,3 +14,18 @@ body {
   max-width: 144rem;
   margin: 0 auto;
 }
+
+.getStarted:link,
+.getStarted:visited {
+  background-color: var(--color-bright-red);
+  border-radius: 4rem;
+  padding: 1.1rem 3rem;
+  transition: var(--transition-timing);
+  box-shadow: 0 0 0.3rem var(--color-pale-red);
+}
+
+.getStarted:hover,
+.getStarted:active {
+  cursor: pointer;
+  background-color: var(--color-pale-red);
+}
