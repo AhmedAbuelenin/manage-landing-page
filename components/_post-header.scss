@@ -1,0 +1,21 @@
+.post-header {
+  align-items: center;
+}
+
+.post__title {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-dark-blue);
+}
+
+.post__description {
+  margin: 4rem 0;
+  width: 76%;
+}
+
+.post__img {
+  justify-self: flex-end;
+  max-width: 100%;
+  height: auto;
+  margin-inline-end: -1.9rem;
+}

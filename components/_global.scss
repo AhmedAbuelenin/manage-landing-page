@@ -7,16 +7,19 @@ body {
   font-family: var(--font-family-vietnam);
   font-weight: var(--font-weight-regular);
   background-color: var(--color-white);
-  color: var(--color-light-gray);
+  color: var(--color-grayish-blue);
 }
 
 .container {
+  display: grid;
+  row-gap: 12rem;
   max-width: 144rem;
   margin: 0 auto;
 }
 
 .getStarted:link,
 .getStarted:visited {
+  color: var(--color-light-gray);
   background-color: var(--color-bright-red);
   border-radius: 4rem;
   padding: 1.1rem 3rem;
@@ -28,4 +31,10 @@ body {
 .getStarted:active {
   cursor: pointer;
   background-color: var(--color-pale-red);
+}
+
+.two-columns {
+  display: grid;
+  column-gap: 6rem;
+  grid-template-columns: repeat(2, 1fr);
 }
