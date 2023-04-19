@@ -1,8 +1,6 @@
 .testimonials {
-  position: relative;
-  grid-column: 1/-1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  row-gap: 4rem;
 }
 
 .testimonials h2 {
@@ -12,13 +10,10 @@
 
 .swiper {
   width: 100%;
-  margin: 4rem 0 3rem;
   overflow: hidden;
 }
 
 .swiper-slide {
-  //   position: absolute;
-  //   z-index: -1;
   display: grid;
   row-gap: 2rem;
   padding: 0 3rem 3rem;
@@ -27,10 +22,6 @@
 }
 
 .swiper-slide img {
-  //   position: absolute;
-  //   z-index: 2;
-  //   top: -3rem;
-  //   left: 50%;
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -44,5 +35,5 @@
 }
 
 .getStarted--align {
-  align-self: center;
+  justify-self: center;
 }

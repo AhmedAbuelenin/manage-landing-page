@@ -82,11 +82,11 @@ body {
   background-color: var(--color-pale-red);
 }
 
-.two-columns {
+.two-columns,
+.section {
   display: grid;
   -moz-column-gap: 6rem;
        column-gap: 6rem;
-  row-gap: 12rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -175,10 +175,8 @@ body {
 }
 
 .testimonials {
-  position: relative;
-  grid-column: 1/-1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  row-gap: 4rem;
 }
 
 .testimonials h2 {
@@ -188,7 +186,6 @@ body {
 
 .swiper {
   width: 100%;
-  margin: 4rem 0 3rem;
   overflow: hidden;
 }
 
@@ -214,5 +211,5 @@ body {
 }
 
 .getStarted--align {
-  align-self: center;
+  justify-self: center;
 }/*# sourceMappingURL=style.css.map */
