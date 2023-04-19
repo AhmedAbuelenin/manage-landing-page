@@ -1,21 +1,17 @@
-.main__list {
+.features__list {
   display: grid;
   row-gap: 3rem;
   padding-inline-start: 3.5rem;
 }
 
-.main__item {
+.features__item {
   display: flex;
   gap: 2.5rem;
   align-items: flex-start;
 }
 
-.main__description {
-  margin-top: 3rem;
-}
-
-.item__content {
-  padding-top: 0.7rem;
+.item__description {
+  margin-top: 2rem;
 }
 
 .item__no {
@@ -30,5 +26,4 @@
   display: inline-block;
   color: var(--color-dark-blue);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 2rem;
 }

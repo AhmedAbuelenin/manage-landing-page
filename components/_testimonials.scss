@@ -3,7 +3,7 @@
   row-gap: 4rem;
 }
 
-.testimonials h2 {
+.testimonials__header {
   width: 100%;
   text-align: center;
 }
@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-.swiper-slide img {
+.testimonials__img {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
