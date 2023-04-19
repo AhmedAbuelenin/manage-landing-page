@@ -39,3 +39,31 @@ body {
   row-gap: 12rem;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.h2-heading {
+  color: var(--color-dark-blue);
+  font-size: var(--font-size-40);
+  font-weight: var(--font-weight-medium);
+}
+
+// .upper-bg-img {
+//   position: absolute;
+//   top: -18rem;
+//   right: -4.5rem;
+//   width: 45%;
+//   height: 67.3%;
+//   background-image: url(../images/bg-tablet-pattern.svg);
+//   background-size: cover;
+//   z-index: -1;
+// }
+
+// .lower-bg-img {
+//   position: absolute;
+//   top: 120rem;
+//   left: -110rem;
+//   width: 74%;
+//   height: 67.3%;
+//   background-image: url(../images/bg-tablet-pattern.svg);
+//   background-size: cover;
+//   z-index: -1;
+// }
