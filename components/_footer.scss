@@ -1,0 +1,30 @@
+.footer {
+  min-width: 100vw;
+  justify-self: center;
+}
+
+.footer__top {
+  display: flex;
+  background-color: var(--color-bright-red);
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 13rem;
+}
+
+.footer__top__span {
+  color: var(--color-light-gray);
+  font-size: var(--font-size-25);
+}
+
+.getStarted-bg:link,
+.getStarted-bg:visited {
+  color: var(--color-bright-red);
+  background-color: var(--color-white);
+  align-self: center;
+}
+
+.getStarted-bg:hover,
+.getStarted-bg:active {
+  cursor: pointer;
+  color: var(--color-pale-red);
+}
