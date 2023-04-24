@@ -74,6 +74,7 @@ body {
   row-gap: 14rem;
   max-width: 144rem;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .getStarted:link,
@@ -85,6 +86,8 @@ body {
   padding: 1.1rem 3rem;
   transition: var(--transition-timing);
   box-shadow: 0 0 0.3rem var(--color-pale-red);
+  -webkit-margin-end: 1.8rem;
+          margin-inline-end: 1.8rem;
 }
 
 .getStarted:hover,
@@ -110,18 +113,18 @@ body {
 .top-bg-img {
   display: block;
   position: absolute;
-  top: -15rem;
-  right: -18.5rem;
-  max-width: 56.5%;
+  top: -27rem;
+  right: -16.5rem;
+  width: 53.5%;
   height: auto;
   z-index: -1;
 }
 
 .lower-bg-img {
   position: absolute;
-  top: 107rem;
-  left: -42rem;
-  width: 45%;
+  top: 117rem;
+  left: -46rem;
+  width: 41%;
   height: auto;
   z-index: -1;
 }
@@ -168,8 +171,6 @@ body {
   justify-self: flex-end;
   width: 100%;
   height: auto;
-  -webkit-margin-end: -1.9rem;
-          margin-inline-end: -1.9rem;
 }
 
 .features__list {
@@ -185,6 +186,13 @@ body {
   align-items: flex-start;
 }
 
+.item__title {
+  display: inline-block;
+  color: var(--color-dark-blue);
+  font-weight: var(--font-weight-bold);
+  padding-top: 0.7rem;
+}
+
 .item__description {
   margin-top: 2rem;
 }
@@ -197,15 +205,11 @@ body {
   border-radius: 2rem;
 }
 
-.item__title {
-  display: inline-block;
-  color: var(--color-dark-blue);
-  font-weight: var(--font-weight-bold);
-}
-
 .testimonials {
+  width: 100%;
   display: grid;
   row-gap: 4rem;
+  margin: 14rem 0;
 }
 
 .testimonials__header {
@@ -244,7 +248,7 @@ body {
 }
 
 .footer {
-  min-width: 100vw;
+  width: 100%;
   justify-self: center;
 }
 
