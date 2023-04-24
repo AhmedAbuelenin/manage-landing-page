@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
   font-family: var(--font-family-vietnam);
   font-weight: var(--font-weight-regular);
@@ -12,13 +13,14 @@ body {
 
 .container {
   display: grid;
-  row-gap: 12rem;
+  row-gap: 14rem;
   max-width: 144rem;
   margin: 0 auto;
 }
 
 .getStarted:link,
 .getStarted:visited {
+  font-size: var(--font-size-13);
   color: var(--color-light-gray);
   background-color: var(--color-bright-red);
   border-radius: 4rem;
@@ -46,24 +48,21 @@ body {
   font-weight: var(--font-weight-medium);
 }
 
-// .upper-bg-img {
-//   position: absolute;
-//   top: -18rem;
-//   right: -4.5rem;
-//   width: 45%;
-//   height: 67.3%;
-//   background-image: url(../images/bg-tablet-pattern.svg);
-//   background-size: cover;
-//   z-index: -1;
-// }
+.top-bg-img {
+  display: block;
+  position: absolute;
+  top: -15rem;
+  right: -18.5rem;
+  max-width: 56.5%;
+  height: auto;
+  z-index: -1;
+}
 
-// .lower-bg-img {
-//   position: absolute;
-//   top: 120rem;
-//   left: -110rem;
-//   width: 74%;
-//   height: 67.3%;
-//   background-image: url(../images/bg-tablet-pattern.svg);
-//   background-size: cover;
-//   z-index: -1;
-// }
+.lower-bg-img {
+  position: absolute;
+  top: 107rem;
+  left: -42rem;
+  width: 45%;
+  height: auto;
+  z-index: -1;
+}
