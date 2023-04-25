@@ -4,7 +4,14 @@ const swiper = new Swiper('.swiper', {
     delay: 5000,
     disableOnInteraction: false
   },
+  breakpoints: {
+    // when window width is >= 501px
+    501: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  },
   spaceBetween: 20,
   speed: 400,
-  slidesPerView: 3
+  slidesPerView: 1
 })

@@ -1,0 +1,244 @@
+@media (max-width: 500px) {
+  /* Global */
+  .getStarted-hidden {
+    display: none;
+  }
+
+  .getStarted:hover,
+  .getStarted:active {
+    background-color: var(--color-bright-red);
+  }
+
+  .getStarted-bg:hover,
+  .getStarted-bg:active {
+    color: var(--color-bright-red);
+  }
+
+  .burger-icon {
+    display: inline;
+  }
+
+  .header::after {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    transition: var(--transition-timing);
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  //   .nav__list {
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 2rem;
+  //   }
+
+  .container {
+    row-gap: 0;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    grid-row: 5rem;
+  }
+
+  .h2-heading {
+    text-align: center;
+    font-size: var(--font-size-30);
+    font-weight: var(--font-weight-bold);
+  }
+  /* End Global*/
+
+  /* Intro */
+  .intro {
+    margin: 3rem 0 9rem;
+  }
+
+  .intro__img {
+    order: -1;
+  }
+
+  .intro__texts__box {
+    text-align: center;
+  }
+
+  .intro__header {
+    font-size: var(--font-size-38);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .intro__description {
+    width: 100%;
+  }
+  /* End Intro */
+
+  /* Features */
+  .features__list {
+    padding: 0;
+    row-gap: 4.5rem;
+  }
+
+  .features__main__description {
+    text-align: center;
+    margin-bottom: 5.5rem;
+  }
+
+  .features__content {
+    gap: 0;
+    margin: 0 -2rem 0.7rem 0;
+    background-color: var(--color-pale-red);
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    align-items: center;
+  }
+
+  .features__title {
+    padding: 0;
+    margin: 0 0 0 1.2rem;
+  }
+
+  .features__description {
+    margin-inline-start: 0;
+  }
+  /* End Features */
+
+  /* Testimonials */
+  .testimonials {
+    margin: 7rem 0 3.5rem;
+  }
+
+  .swiper {
+    width: 90%;
+  }
+  /* End Testimonials */
+
+  /* Footer */
+  .footer__upper {
+    flex-direction: column;
+    padding: 8.5rem 2.4rem;
+  }
+
+  .footer__slogan {
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 2.2rem;
+    text-align: center;
+  }
+
+  .footer__slogan::after {
+    content: ' works\atoday.';
+  }
+
+  .footer__lower {
+    position: relative;
+    padding: 4rem 3rem;
+  }
+
+  .inner-container {
+    flex-direction: column;
+    height: 48rem;
+    justify-content: flex-start;
+  }
+
+  .form-container {
+    order: -1;
+  }
+
+  .footer__form {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .input-container {
+    flex: 1;
+  }
+
+  .footer__input {
+    width: 100%;
+    height: 4.2rem;
+  }
+
+  .social-container {
+    position: absolute;
+    bottom: 12rem;
+    left: 8.8%;
+  }
+
+  .socials {
+    order: -1;
+    margin-bottom: 5rem;
+    gap: 3.5rem;
+  }
+
+  .logo-img {
+    width: 60%;
+    align-self: center;
+  }
+
+  .socials-link:link,
+  .socials-link:visited {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .facebook-icon:hover,
+  .facebook-icon:active {
+    background-image: url(../images/icon-facebook.svg);
+  }
+
+  .youtube-icon:hover,
+  .youtube-icon:active {
+    background-image: url(../images/icon-youtube.svg);
+  }
+
+  .twitter-icon:link,
+  .twitter-icon:visited {
+    height: 2.7rem;
+  }
+
+  .twitter-icon:hover,
+  .twitter-icon:active {
+    background-image: url(../images/icon-twitter.svg);
+  }
+
+  .pinterest-icon:hover,
+  .pinterest-icon:active {
+    background-image: url(../images/icon-pinterest.svg);
+  }
+
+  .instagram-icon:hover,
+  .instagram-icon:active {
+    background-image: url(../images/icon-instagram.svg);
+  }
+
+  .links-container {
+    column-gap: 6rem;
+    padding-inline-start: 2rem;
+    margin-top: 6rem;
+  }
+
+  .page-link:link,
+  .page-link:visited {
+    font-size: var(--font-size-16);
+  }
+
+  .footer__button {
+    height: 4.2rem;
+    width: 7.3rem;
+  }
+
+  .footer__button:hover {
+    background-color: var(--color-bright-red);
+  }
+
+  .footer__copyright {
+    position: absolute;
+    bottom: 3rem;
+    left: 18%;
+    font-size: var(--font-size-13);
+  }
+  /* End Footer */
+}

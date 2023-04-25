@@ -45,7 +45,8 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="getStarted">Get Started</a>
+        <a href="#" class="getStarted getStarted-hidden">Get Started</a>
+        <img src="./images/icon-burger.svg" alt="burger icon" class="burger-icon" onclick="handleMenuPress()">
       </header>
 
       <section class="section intro">
@@ -63,9 +64,9 @@
       </section>
 
       <section class="section features">
-        <div>
+        <div class="features__main">
           <h3 class="h2-heading">What’s different about Manage?</h3>
-          <p class="item__description">
+          <p class="features__main__description">
             Manage provides all the functionality your team needs, without
             the complexity. Our software is tailor-made for modern digital
             product teams.
@@ -74,40 +75,40 @@
 
         <ul class="features__list">
           <li class="features__item">
-            <span class="item__no">01</span>
-            <div>
-              <span class="item__title">Track company-wide progress</span>
-              <p class="item__description">
-                See how your day-to-day tasks fit into the wider vision. Go from
-                tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture again.
-              </p>
+            <div class="features__content">
+              <span class="features__no">01</span>
+              <span class="features__title">Track company-wide progress</span>
             </div>
+            <p class="features__description">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
           </li>
 
           <li class="features__item">
-            <span class="item__no">02</span>
-            <div class="item__content">
-              <span class="item__title">Advanced built-in reports</span>
-              <p class="item__description">
-                Set internal delivery estimates and track progress toward company
-                goals. Our customizable dashboard helps you build out the reports
-                you need to keep key stakeholders informed.
-              </p>
+            <div class="features__content">
+              <span class="features__no">02</span>
+              <span class="features__title">Advanced built-in reports</span>
             </div>
+            <p class="features__description">
+              Set internal delivery estimates and track progress toward company
+              goals. Our customizable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
           </li>
 
           <li class="features__item">
-            <span class="item__no">03</span>
-            <div class="item__content">
-              <span class="item__title">Everything you need in one place
+            <div class="features__content">
+              <span class="features__no">03</span>
+              <span class="features__title">Everything you need in one place
               </span>
-              <p class="item__description">
-                Stop jumping from one service to another to communicate, store files,
-                track tasks and share documents. Manage offers an all-in-one team
-                productivity solution.
-              </p>
             </div>
+            <p class="features__description">
+              Stop jumping from one service to another to communicate, store files,
+              track tasks and share documents. Manage offers an all-in-one team
+              productivity solution.
+            </p>
           </li>
         </ul>
 
@@ -161,20 +162,20 @@
 
     <footer class="footer">
       <div class="footer__upper">
-        <span class="footer__slogan">Simplify how your team <br> works today.</span>
+        <span class="footer__slogan">Simplify how your team</span>
         <a href="#" class="getStarted getStarted-bg">Get Started</a>
       </div>
 
       <div class="footer__lower">
         <div class="inner-container">
           <div class="social-container">
-            <img src="./images/logoWhite.svg" alt="logo img">
+            <img src="./images/logoWhite.svg" alt="logo img" class="logo-img">
             <div class="socials">
-              <a href="#" class="socials-link facebook-icon"></a>
-              <a href="#" class="socials-link youtube-icon"></a>
-              <a href="#" class="socials-link twitter-icon"></a>
-              <a href="#" class="socials-link pinterest-icon"></a>
-              <a href="#" class="socials-link instagram-icon"></a>
+              <a href="https://facebook.com" class="socials-link facebook-icon" target="_blank"></a>
+              <a href="https://youtube.com" class="socials-link youtube-icon" target="_blank"></a>
+              <a href="https://twitter.com" class="socials-link twitter-icon" target="_blank"></a>
+              <a href="https://pinterest.com" class="socials-link pinterest-icon" target="_blank"></a>
+              <a href="https://instagram.com" class="socials-link instagram-icon" target="_blank"></a>
             </div>
           </div>
 
@@ -194,10 +195,12 @@
 
           <div class="form-container">
             <form action="#" class="footer__form" novalidate>
-              <input type="email" id="footer__input" name="Email" placeholder="Enter your email" class="footer__input"
-                required>
+              <div class="input-container">
+                <input type="email" id="footer__input" name="Email" placeholder="Updates in your inbox..."
+                  class="footer__input" required>
+                <p id="footer__error" class="footer__error"></p>
+              </div>
               <input type="submit" value="Go" class="footer__button">
-              <p id="footer__error" class="footer__error"></p>
             </form>
             <span class="footer__copyright">Copyright 2023. All Rights Reserved</span>
           </div>
@@ -208,6 +211,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./scripts/form-script.js"></script>
     <script src="./scripts/swiper-script.js"></script>
+    <script>
+      function handleMenuPress() {
+        console.log('burger icon is pressed')
+      }
+    </script>
   </body>
 
 </html>
