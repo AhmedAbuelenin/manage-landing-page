@@ -14,8 +14,16 @@
     color: var(--color-bright-red);
   }
 
-  .burger-icon {
+  .menu-icon {
     display: inline;
+    height: 2.2rem;
+    width: 2.8rem;
+    transition: var(--transition-timing);
+  }
+
+  .menu-icon.clicked {
+    height: 2.4rem;
+    width: 2.4rem;
   }
 
   .header::after {
@@ -28,13 +36,27 @@
 
   .nav__list {
     display: none;
+    transition: var(--transition-timing);
   }
 
-  //   .nav__list {
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 2rem;
-  //   }
+  .header:has(.menu-icon.clicked) .nav__list {
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    background-color: var(--color-white);
+    border-radius: 0.2rem;
+    width: 90%;
+    padding: 3rem 0;
+    align-items: center;
+  }
+
+  .nav__item a:link,
+  .nav__item a:visited {
+    color: var(--color-dark-blue);
+  }
 
   .container {
     row-gap: 0;
