@@ -1,6 +1,6 @@
 :root {
   --color-white: #ffffff;
-  --color-pale-red: hsl(12, 100%, 96%);
+  --color-pale-red: hsl(12, 100%, 80%);
   --color-bright-red: #f25f3a;
   --color-light-gray: #fafafa;
   --color-grayish-blue: #9095a7;
@@ -245,6 +245,10 @@ body {
   text-align: center;
 }
 
+.custom-swiper-pagination {
+  display: none;
+}
+
 .testimonials__img {
   width: 7rem;
   height: 7rem;
@@ -483,6 +487,11 @@ body {
   .getStarted-hidden {
     display: none;
   }
+  .getStarted:link,
+  .getStarted:visited {
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+  }
   .getStarted:hover,
   .getStarted:active {
     background-color: var(--color-bright-red);
@@ -607,6 +616,23 @@ body {
   }
   .swiper {
     width: 90%;
+  }
+  .custom-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+  }
+  .swiper-pagination-bullet {
+    border: 0.2rem solid var(--color-bright-red) !important;
+    background-color: transparent !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    border-radius: 50% !important;
+    -webkit-margin-end: 0.1rem !important;
+            margin-inline-end: 0.1rem !important;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-bright-red) !important;
   }
   /* End Testimonials */
   /* Footer */

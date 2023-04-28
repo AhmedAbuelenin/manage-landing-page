@@ -22,6 +22,11 @@
     display: none;
   }
 
+  .getStarted:link,
+  .getStarted:visited {
+    margin-inline-end: 0;
+  }
+
   .getStarted:hover,
   .getStarted:active {
     background-color: var(--color-bright-red);
@@ -169,6 +174,25 @@
 
   .swiper {
     width: 90%;
+  }
+
+  .custom-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+  }
+
+  .swiper-pagination-bullet {
+    border: 0.2rem solid var(--color-bright-red) !important;
+    background-color: transparent !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    border-radius: 50% !important;
+    margin-inline-end: 0.1rem !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-bright-red) !important;
   }
   /* End Testimonials */
 
