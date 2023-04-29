@@ -4,17 +4,18 @@
 
 .intro__header {
   font-size: var(--font-size-65);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   color: var(--color-dark-blue);
 }
 
 .intro__description {
   margin: 3rem 0;
-  width: 76%;
+  max-width: 53%;
 }
 
 .intro__img {
   justify-self: flex-end;
   width: 100%;
   height: auto;
+  margin-inline-end: -2rem;
 }

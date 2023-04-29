@@ -1,6 +1,5 @@
 .footer {
   width: 100%;
-  justify-self: center;
 }
 
 .footer__upper {
@@ -65,8 +64,6 @@
 
 .facebook-icon:link,
 .facebook-icon:visited {
-  // height: 4rem;
-  // width: 4rem;
   background-size: cover;
   background-image: url(../images/icon-facebook.svg);
 }
@@ -157,8 +154,12 @@
   justify-content: space-between;
 }
 
-.footer__input {
+.input-container {
   width: 18rem;
+}
+
+.footer__input {
+  width: 100%;
   font-size: var(--font-size-13);
   background-color: var(--color-white);
   padding: 1rem 1.6rem;

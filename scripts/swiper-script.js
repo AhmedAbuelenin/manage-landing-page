@@ -13,8 +13,8 @@ const swiper = new Swiper('.swiper', {
     bulletActiveClass: 'swiper-pagination-bullet-active'
   },
   breakpoints: {
-    // when window width is >= 501px
-    501: {
+    // when window width is >= 801px
+    801: {
       slidesPerView: 3,
       spaceBetween: 20,
       pagination: {
