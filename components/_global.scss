@@ -10,6 +10,15 @@ body {
   color: var(--color-grayish-blue);
 }
 
+p {
+  line-height: 1.7;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .main-container {
   position: relative;
   max-width: 144rem;
