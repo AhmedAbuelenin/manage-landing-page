@@ -65,57 +65,57 @@
 .facebook-icon:link,
 .facebook-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-facebook.svg);
+  background-image: var(--filepath-fb-white);
 }
 
 .facebook-icon:hover,
 .facebook-icon:active {
-  background-image: url(../images/icon-facebookRed.svg);
+  background-image: var(--filepath-fb-red);
 }
 
 .youtube-icon:link,
 .youtube-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-youtube.svg);
+  background-image: var(--filepath-ytube-white);
 }
 
 .youtube-icon:hover,
 .youtube-icon:active {
-  background-image: url(../images/icon-youtubeRed.svg);
+  background-image: var(--filepath-ytube-red);
 }
 
 .twitter-icon:link,
 .twitter-icon:visited {
   height: 1.9rem;
   background-size: cover;
-  background-image: url(../images/icon-twitter.svg);
+  background-image: var(--filepath-tw-white);
 }
 
 .twitter-icon:hover,
 .twitter-icon:active {
-  background-image: url(../images/icon-twitterRed.svg);
+  background-image: var(--filepath-tw-red);
 }
 
 .pinterest-icon:link,
 .pinterest-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-pinterest.svg);
+  background-image: var(--filepath-pint-white);
 }
 
 .pinterest-icon:hover,
 .pinterest-icon:active {
-  background-image: url(../images/icon-pinterestRed.svg);
+  background-image: var(--filepath-pint-red);
 }
 
 .instagram-icon:link,
 .instagram-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-instagram.svg);
+  background-image: var(--filepath-insta-white);
 }
 
 .instagram-icon:hover,
 .instagram-icon:active {
-  background-image: url(../images/icon-instagramRed.svg);
+  background-image: var(--filepath-insta-red);
 }
 
 .links-container {

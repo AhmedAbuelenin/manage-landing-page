@@ -22,6 +22,16 @@
   --font-size-50: 5rem;
   --font-size-65: 6.5rem;
   --transition-timing: 0.3s;
+  --filepath-fb-white: url("../assets/images/icon-facebook.svg");
+  --filepath-fb-red: url("../assets/images/icon-facebookRed.svg");
+  --filepath-tw-white: url("../assets/images/icon-twitter.svg");
+  --filepath-tw-red: url("../assets/images/icon-twitterRed.svg");
+  --filepath-ytube-white: url("../assets/images/icon-youtube.svg");
+  --filepath-ytube-red: url("../assets/images/icon-youtubeRed.svg");
+  --filepath-insta-white: url("../assets/images/icon-instagram.svg");
+  --filepath-insta-red: url("../assets/images/icon-instagramRed.svg");
+  --filepath-pint-white: url("../assets/images/icon-pinterest.svg");
+  --filepath-pint-red: url("../assets/images/icon-pinterestRed.svg");
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -635,57 +645,57 @@ ol {
 .facebook-icon:link,
 .facebook-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-facebook.svg);
+  background-image: var(--filepath-fb-white);
 }
 
 .facebook-icon:hover,
 .facebook-icon:active {
-  background-image: url(../images/icon-facebookRed.svg);
+  background-image: var(--filepath-fb-red);
 }
 
 .youtube-icon:link,
 .youtube-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-youtube.svg);
+  background-image: var(--filepath-ytube-white);
 }
 
 .youtube-icon:hover,
 .youtube-icon:active {
-  background-image: url(../images/icon-youtubeRed.svg);
+  background-image: var(--filepath-ytube-red);
 }
 
 .twitter-icon:link,
 .twitter-icon:visited {
   height: 1.9rem;
   background-size: cover;
-  background-image: url(../images/icon-twitter.svg);
+  background-image: var(--filepath-tw-white);
 }
 
 .twitter-icon:hover,
 .twitter-icon:active {
-  background-image: url(../images/icon-twitterRed.svg);
+  background-image: var(--filepath-tw-red);
 }
 
 .pinterest-icon:link,
 .pinterest-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-pinterest.svg);
+  background-image: var(--filepath-pint-white);
 }
 
 .pinterest-icon:hover,
 .pinterest-icon:active {
-  background-image: url(../images/icon-pinterestRed.svg);
+  background-image: var(--filepath-pint-red);
 }
 
 .instagram-icon:link,
 .instagram-icon:visited {
   background-size: cover;
-  background-image: url(../images/icon-instagram.svg);
+  background-image: var(--filepath-insta-white);
 }
 
 .instagram-icon:hover,
 .instagram-icon:active {
-  background-image: url(../images/icon-instagramRed.svg);
+  background-image: var(--filepath-insta-red);
 }
 
 .links-container {
@@ -1065,11 +1075,11 @@ ol {
   }
   .facebook-icon:hover,
   .facebook-icon:active {
-    background-image: url(../images/icon-facebook.svg);
+    background-image: var(--filepath-fb-white);
   }
   .youtube-icon:hover,
   .youtube-icon:active {
-    background-image: url(../images/icon-youtube.svg);
+    background-image: var(--filepath-ytube-white);
   }
   .twitter-icon:link,
   .twitter-icon:visited {
@@ -1077,15 +1087,15 @@ ol {
   }
   .twitter-icon:hover,
   .twitter-icon:active {
-    background-image: url(../images/icon-twitter.svg);
+    background-image: var(--filepath-tw-white);
   }
   .pinterest-icon:hover,
   .pinterest-icon:active {
-    background-image: url(../images/icon-pinterest.svg);
+    background-image: var(--filepath-pint-white);
   }
   .instagram-icon:hover,
   .instagram-icon:active {
-    background-image: url(../images/icon-instagram.svg);
+    background-image: var(--filepath-insta-white);
   }
   .socials {
     width: 100%;

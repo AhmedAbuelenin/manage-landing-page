@@ -341,12 +341,12 @@
 
   .facebook-icon:hover,
   .facebook-icon:active {
-    background-image: url(../images/icon-facebook.svg);
+    background-image: var(--filepath-fb-white);
   }
 
   .youtube-icon:hover,
   .youtube-icon:active {
-    background-image: url(../images/icon-youtube.svg);
+    background-image: var(--filepath-ytube-white);
   }
 
   .twitter-icon:link,
@@ -356,17 +356,17 @@
 
   .twitter-icon:hover,
   .twitter-icon:active {
-    background-image: url(../images/icon-twitter.svg);
+    background-image: var(--filepath-tw-white);
   }
 
   .pinterest-icon:hover,
   .pinterest-icon:active {
-    background-image: url(../images/icon-pinterest.svg);
+    background-image: var(--filepath-pint-white);
   }
 
   .instagram-icon:hover,
   .instagram-icon:active {
-    background-image: url(../images/icon-instagram.svg);
+    background-image: var(--filepath-insta-white);
   }
 
   .socials {

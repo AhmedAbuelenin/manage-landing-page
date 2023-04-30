@@ -1,6 +1,7 @@
 const menu = document.querySelector('.menu-icon')
 const navigation = document.querySelector('.navigation')
 const overlay = document.querySelector('.overlay')
+const menuIconPath = './src/assets/images/icon-burger.svg'
 
 function toggleActiveClass() {
   menu.classList.toggle('clicked')
@@ -13,15 +14,17 @@ menu.addEventListener('click', function () {
   toggleActiveClass()
 
   if (!isClicked) {
-    menu.src = './images/icon-close.svg'
+    menu.src = './src/assets/images/icon-close.svg'
     return
   }
 
-  menu.src = './images/icon-burger.svg'
+  console.log('src url', menu.getAttribute('src'))
+
+  menu.src = menuIconPath
 })
 
 overlay.addEventListener('click', function () {
   toggleActiveClass()
 
-  menu.src = './images/icon-burger.svg'
+  menu.src = menuIconPath
 })
