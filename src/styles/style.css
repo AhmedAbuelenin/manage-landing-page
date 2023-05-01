@@ -876,7 +876,6 @@ ol {
   }
   .section {
     grid-template-columns: 1fr;
-    grid-row: 5rem;
   }
   .h2-heading {
     text-align: center;
