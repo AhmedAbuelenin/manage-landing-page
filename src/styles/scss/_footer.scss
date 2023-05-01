@@ -1,11 +1,12 @@
+@import './mixins';
+
 .footer {
   width: 100%;
 }
 
 .footer__upper {
-  display: flex;
+  @include justify-between-container;
   background-color: var(--color-bright-red);
-  justify-content: space-between;
   align-items: flex-start;
   padding: 4rem 13rem;
 }
@@ -39,15 +40,12 @@
 }
 
 .inner-container {
-  display: flex;
-  justify-content: space-between;
+  @include justify-between-container;
   height: 11rem;
 }
 
 .social-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include justify-between-container($flex-direction: column);
 }
 
 .socials {
@@ -119,9 +117,7 @@
 }
 
 .links-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 15rem;
+  @include two-columns;
 }
 
 .pages-links {
@@ -149,9 +145,7 @@
 }
 
 .form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include justify-between-container($flex-direction: column);
 }
 
 .input-container {

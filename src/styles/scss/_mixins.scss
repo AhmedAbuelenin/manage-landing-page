@@ -1,0 +1,21 @@
+@mixin justify-between-container($flex-direction: row) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: space-between;
+}
+
+@mixin two-columns($column-gap: 15rem) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: $column-gap;
+}
+
+@mixin one-column($row-gap) {
+  display: grid;
+  row-gap: $row-gap;
+}
+
+@mixin text-center() {
+  width: 100%;
+  text-align: center;
+}

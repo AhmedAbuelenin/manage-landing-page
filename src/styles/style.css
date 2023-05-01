@@ -413,9 +413,9 @@ ol {
 
 .section {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 6rem;
        column-gap: 6rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .h2-heading {
@@ -442,6 +442,7 @@ ol {
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 5rem;
@@ -533,10 +534,10 @@ ol {
 }
 
 .testimonials {
-  width: 100%;
   display: grid;
   row-gap: 4rem;
-  margin: 14rem 0;
+  width: 100%;
+  margin: 11rem 0;
 }
 
 .testimonials__header {
@@ -584,8 +585,9 @@ ol {
 
 .footer__upper {
   display: flex;
-  background-color: var(--color-bright-red);
+  flex-direction: row;
   justify-content: space-between;
+  background-color: var(--color-bright-red);
   align-items: flex-start;
   padding: 4rem 13rem;
 }
@@ -620,6 +622,7 @@ ol {
 
 .inner-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   height: 11rem;
 }
@@ -793,7 +796,6 @@ ol {
     margin: 0 6.5%;
   }
   .top-bg-img {
-    display: block;
     position: absolute;
     top: -3rem;
     right: -6rem;
@@ -808,7 +810,7 @@ ol {
     right: 0;
     transition: var(--transition-timing);
   }
-  .getStarted-hidden {
+  .header__getStarted {
     display: none;
   }
   .getStarted:link,
@@ -882,7 +884,6 @@ ol {
     font-weight: var(--font-weight-bold);
   }
   .top-bg-img {
-    display: block;
     position: absolute;
     top: -10rem;
     right: -16rem;
@@ -977,10 +978,10 @@ ol {
   .footer__slogan {
     display: inline-block;
     width: 100%;
+    text-align: center;
     font-size: var(--font-size-40);
     font-weight: var(--font-weight-medium);
     margin-bottom: 2.2rem;
-    text-align: center;
   }
   .footer__slogan::after {
     content: " works\atoday.";
@@ -1032,11 +1033,12 @@ ol {
     width: 3rem;
   }
   .links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 6rem;
     -moz-column-gap: 0;
          column-gap: 0;
-    display: flex;
-    justify-content: space-between;
     padding: 0 2% 0 4%;
   }
   .page-link:link,
@@ -1051,9 +1053,9 @@ ol {
     display: inline-block;
     position: absolute;
     bottom: 1rem;
-    text-align: center;
     font-size: var(--font-size-13);
     width: 100%;
+    text-align: center;
   }
   /* End Footer */
 }

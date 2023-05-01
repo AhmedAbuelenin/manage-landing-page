@@ -1,13 +1,13 @@
+@import './mixins';
+
 .testimonials {
+  @include one-column($row-gap: 4rem);
   width: 100%;
-  display: grid;
-  row-gap: 4rem;
-  margin: 14rem 0;
+  margin: 11rem 0;
 }
 
 .testimonials__header {
-  width: 100%;
-  text-align: center;
+  @include text-center;
 }
 
 .swiper {
@@ -16,8 +16,7 @@
 }
 
 .swiper-slide {
-  display: grid;
-  row-gap: 2rem;
+  @include one-column($row-gap: 2rem);
   padding: 0 3rem 3rem;
   background-color: var(--color-light-gray);
   text-align: center;

@@ -1,6 +1,7 @@
+@import './mixins';
+
 .header {
-  display: flex;
-  justify-content: space-between;
+  @include justify-between-container;
   align-items: center;
   padding-top: 5rem;
 }

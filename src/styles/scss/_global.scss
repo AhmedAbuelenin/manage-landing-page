@@ -1,3 +1,5 @@
+@import './mixins';
+
 html {
   font-size: 10px;
 }
@@ -27,8 +29,7 @@ ol {
 }
 
 .container {
-  display: grid;
-  row-gap: 6rem;
+  @include one-column($row-gap: 6rem);
   margin: 0 8%;
 }
 
@@ -50,9 +51,7 @@ ol {
 }
 
 .section {
-  display: grid;
-  column-gap: 6rem;
-  grid-template-columns: repeat(2, 1fr);
+  @include two-columns($column-gap: 6rem);
 }
 
 .h2-heading {
